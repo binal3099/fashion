@@ -1,0 +1,268 @@
+.categories-box {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.categories-box h2 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.categories-box a {
+  color: var(--black-color);
+  text-transform: capitalize;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.categories-box i {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.products h2 {
+  text-transform: capitalize;
+}
+.products .list {
+  margin-left: auto;
+}
+.products .list ul {
+  display: flex;
+  padding: 10px;
+}
+.products .list ul a {
+  margin: 10px;
+  text-transform: capitalize;
+  color: var(--black-color);
+}
+.products .arrow {
+  padding: 5px;
+}
+.products .arrow i {
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+.list-box {
+  padding: 20px;
+  text-transform: capitalize;
+  text-align: center;
+  height: 380px;
+}
+.list-box .product-box {
+  position: relative;
+}
+.list-box .product-box .product-img {
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.list-box .product-box .product-img .overlay {
+  position: absolute;
+  top: 0;
+  display: none;
+  transition: all 3s;
+}
+.list-box .product-box .product-content h4 {
+  font-weight: 400;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.list-box .product-box .product-content span {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.list-box .product-box .product-content .old {
+  margin-left: 5px;
+  text-decoration: line-through;
+  color: var(--primary-color);
+}
+.list-box .product-box .product-content .btn {
+  display: flex;
+  justify-content: center;
+}
+.list-box .product-box .product-content .btn a {
+  width: 100px;
+  padding: 10px 15px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: 12px;
+  border-radius: 30px;
+  display: none;
+}
+.list-box .product-box .star {
+  position: absolute;
+  color: yellow;
+  bottom: 28%;
+  background-color: rgba(169, 169, 169, 0.649);
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  padding: 5px;
+  display: none;
+  transition: all 3s;
+}
+.list-box .product-box .drop i {
+  border: 1px solid;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: none;
+  border: none;
+  outline: none;
+}
+.list-box .product-box .drop .drop2 {
+  position: absolute;
+  left: 45%;
+}
+.list-box .product-box .drop .drop3 {
+  position: absolute;
+  left: 65%;
+}
+.list-box .product-box:hover .star {
+  display: block;
+}
+.list-box .product-box:hover .btn a {
+  display: block;
+  transition: all 3s ease;
+}
+.list-box .product-box:hover .drop i {
+  display: block;
+}
+.list-box .product-box:hover .overlay {
+  display: block;
+}
+
+.slider-box {
+  text-align: center;
+  position: relative;
+}
+.slider-box .slider-img {
+  padding: 10px;
+}
+.slider-box .slider-content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.slider-box .slider-content a {
+  background-color: var(--white-color);
+  padding: 5px;
+  color: var(--black-color);
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.slider-box .slider-content h2 {
+  font-size: 38px;
+  font-family: var(--secondary-font);
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.products .arrow-2, .blog .arrow-2 {
+  padding: 5px;
+  margin-left: auto;
+}
+.products .arrow-2 i, .blog .arrow-2 i {
+  border: 1px solid var(--primary-color);
+  padding: 8px;
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+
+.cms-banner {
+  text-align: center;
+  position: relative;
+}
+.cms-banner .cms-content {
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+.cms-banner .cms-content img {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.cms-banner .cms-content h2 {
+  font-size: 40px;
+  font-family: var(--secondary-font);
+  background-color: var(--white-color);
+  padding: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.cms-banner .cms-content a {
+  padding: 5px;
+  color: var(--black-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.blog-box {
+  text-align: center;
+}
+.blog-box .blog-img {
+  margin: 10px;
+  position: relative;
+}
+.blog-box .blog-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.blog-box .blog-img .shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.blog-box .blog-img .shade .content {
+  position: absolute;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  padding: 10px;
+  border: 2px double #fff;
+  transition: all 0.3s ease;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  padding: 60px;
+}
+.blog-box .blog-img .shade .content i {
+  text-align: center;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 30px;
+}
+.blog-box .blog-img:hover .shade {
+  opacity: 1;
+}
+.blog-box .blog-img:hover .content {
+  opacity: 1;
+}
+.blog-box .blog-content h2 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.blog-box .blog-content span {
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=main.css.map */

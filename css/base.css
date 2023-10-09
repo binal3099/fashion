@@ -1,0 +1,56 @@
+:root {
+  --primary-font:Open Sans;
+  --secondary-font:Raleway;
+  --bg-color:#ffffff;
+  --bg-color-rgb:255, 255, 255;
+  --font-color:#e6e6e6;
+  --font-color-rgb:230, 230, 230;
+  --primary-color:#8e8e8e;
+  --primary-color-rgb:rgb(142, 142, 142);
+  --white-color:#fff;
+  --white-color-rgb:255, 255, 255;
+  --black-color:#000000;
+  --black-color-rgb:0, 0, 0;
+  --gutter-padding:15px;
+  --font-size:16px;
+  --font-weigth:500;
+  --line-height:1.5;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+ol, ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--primary-font);
+  line-height: var(--line-height);
+  font-weight: var(--font-weigth);
+  background-color: var(--white-color);
+}/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,82 @@
+$primary: "Open Sans";
+$secondary:"Raleway";
+$bg-color:#ffffff;
+$bg-color-rgb:255, 255, 255;
+$font-color:#e6e6e6;
+$font-color-rgb:230, 230, 230;
+$primary-color:#8e8e8e;
+$primary-color-rgb:rgb(142, 142, 142);
+$white-color:#fff;
+$white-color-rgb:255, 255, 255;
+$black-color:#000000;
+$black-color-rgb:0, 0, 0;
+$gutter-padding:15px;
+$fs:16px;
+$fw:500;
+$lh:1.5;
+
+:root{
+    --primary-font:#{$primary};
+    --secondary-font:#{$secondary};
+    --bg-color:#{$bg-color};
+    --bg-color-rgb:#{$bg-color-rgb};
+    --font-color:#{$font-color};
+    --font-color-rgb:#{$font-color-rgb};
+    --primary-color:#{$primary-color};
+    --primary-color-rgb:#{$primary-color-rgb};
+    --white-color:#{$white-color};
+    --white-color-rgb:#{$white-color-rgb};
+    --black-color:#{$black-color};
+    --black-color-rgb:#{$black-color-rgb};
+    --gutter-padding:#{$gutter-padding};
+    --font-size:#{$fs};
+    --font-weigth:#{$fw};
+    --line-height:#{$lh};
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html , body{
+    scroll-behavior: smooth;
+}
+ol , ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+span{
+    display: inline-block;
+}
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.py-50{
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+.pt{
+    padding-top: 100px;
+}
+.pb{
+    padding-bottom: 100px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+body{
+    font-size:var(--font-size);
+    font-family: var(--primary-font);
+    line-height: var(--line-height);
+    font-weight: var(--font-weigth);
+    background-color:var(--white-color);
+}
